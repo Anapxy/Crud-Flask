@@ -20,13 +20,27 @@ Acesse em <http://127.0.0.1:5000>
 
 ### Windows (PowerShell)
 
-```powershell
+### Windows (PowerShell)
 
+```powershell
+1- instalar o Python
+2 - Instalar o  VS Code
+3 - criar ambiente virtual: 
 python -m venv .venv
-.venv\Scripts\Activate.ps1
-pip install -r requirements.txt
-python form_db.py   # cria/zera o banco form_db.db
+
+4 - Ativar ambiente virtual:
+.venv/scripts/activate
+
+5 - Instalar o Flask:
+pip install flask
+
+6 - Criar BD:
+python db_smarteventos.py   # cria/zera o banco form_db.db
+
+7 - Rodar o software:
 python app.py       # inicia o servidor
+
+Obs: Para parar o servidor CTRL + C
 ```
 
 Se a ativação da venv for bloqueada, abra o PowerShell e execute:
